@@ -1,0 +1,140 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.flex{
+    display: flex;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #8d2627;
+    border: 0;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(117, 116, 116);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #ffffff;
+    transform: scale(1.03);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*BOTÃO DE CONTATO*/
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #f46d6d;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+.topo-do-site h1{
+    color:rgb(255, 255, 255);
+    font-size: 34px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #f33f3f;
+}
+
+.topo-do-site p{
+    color: #ffffff;
+    margin: 25px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: fotoflutuante 2s ease-in-out infinite alternate;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: opacity : 100;
+    padding: 35px;
+    img { opacity : 30; }
+}
+
+.grid-item {
+   background-color: rgba(0, 0, 0, 0.8);
+   border: 5px solid black;
+   padding: 7px;
+   font-size: 15px;
+   text-align: center;
+}
+
+.justify-items{
+    justify-items: center;
+}
+.gold-on-gold {
+    text-shadow:
+      rgba(0, 0, 0, 0.1) -1px 0,
+      rgba(0, 0, 0, 0.1) 0 -1px,
+      rgba(255, 255, 255, 0.1) 1px 0,
+      rgba(255, 255, 255, 0.1) 0 1px,
+      rgba(0, 0, 0, 0.1) -1px -1px,
+      rgba(255, 255, 255, 0.1) 1px 1px;
+    color: rgb(255, 255, 255);
+    background: rgb(19, 19, 19);
+  }
+@keyframes fotoflutuante{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
